@@ -14,9 +14,12 @@ def feature_engineer(csv):
     df['large_area']=df['area']>df['area'].median()
     df['guestroom_multi_story']=df['guestroom'] & (df['stories']>1)
     df['premium_location']=df['mainroad'] & df['prefarea']
-    df['area_furnishing']=df['area'] * df['furnishingstatus']
     df['bedrooms_per_area']=df['bedrooms']/df['area']
     df['stories_per_area']=df['stories']/df['area']
     df['parking_per_area']=df['parking']/df['area']
 
     return df
+
+if __name__=='__main__':
+    df=feature_engineer('Housing.csv')
+    df.head()

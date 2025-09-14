@@ -9,3 +9,5 @@ def normalise_data(csv):
             continue
         
         df[cols]=(df[cols]-df[cols].mean())/(df[cols].std())
+
+    return df
