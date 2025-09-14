@@ -1,0 +1,12 @@
+housing.csv# Ignore dataset
+Housing.csv
+
+# Ignore python cache
+__pycache__/
+*.pyc
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore VS Code
+.vscode/
