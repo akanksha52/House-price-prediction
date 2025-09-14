@@ -19,7 +19,3 @@ def feature_engineer(csv):
     df['parking_per_area']=df['parking']/df['area']
 
     return df
-
-if __name__=='__main__':
-    df=feature_engineer('Housing.csv')
-    df.head()
